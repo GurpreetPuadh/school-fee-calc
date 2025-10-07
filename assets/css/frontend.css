@@ -1,0 +1,182 @@
+/* School Fee Calculator Frontend Styles */
+.sfc-calculator-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.sfc-form-section {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #0073aa;
+}
+
+.sfc-form-section h3 {
+    margin-top: 0;
+    color: #0073aa;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.sfc-form-group {
+    margin-bottom: 15px;
+}
+
+.sfc-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sfc-form-group select,
+.sfc-form-group input[type="number"],
+.sfc-form-group input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.sfc-checkbox-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.sfc-checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.sfc-form-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sfc-calculate-btn,
+.sfc-reset-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.sfc-calculate-btn {
+    background: #0073aa;
+    color: white;
+}
+
+.sfc-calculate-btn:hover {
+    background: #005a87;
+}
+
+.sfc-reset-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.sfc-reset-btn:hover {
+    background: #545b62;
+}
+
+/* Results Styles */
+.sfc-results {
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.sfc-results-header {
+    background: #0073aa;
+    color: white;
+    padding: 15px;
+    border-radius: 6px 6px 0 0;
+    margin: -20px -20px 20px -20px;
+}
+
+.sfc-results-header h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.sfc-fee-breakdown {
+    margin-bottom: 20px;
+}
+
+.sfc-fee-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.sfc-fee-item.total {
+    font-weight: bold;
+    font-size: 1.1em;
+    border-top: 2px solid #0073aa;
+    border-bottom: none;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.sfc-discount-item {
+    color: #28a745;
+}
+
+.sfc-payment-schedule {
+    margin-top: 20px;
+}
+
+.sfc-installment {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f8f9fa;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.sfc-installment:nth-child(even) {
+    background: #e9ecef;
+}
+
+.sfc-loading {
+    text-align: center;
+    padding: 20px;
+    color: #0073aa;
+}
+
+.sfc-error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sfc-calculator-wrapper {
+        padding: 0 15px;
+    }
+    
+    .sfc-form-actions {
+        text-align: center;
+    }
+    
+    .sfc-calculate-btn,
+    .sfc-reset-btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
